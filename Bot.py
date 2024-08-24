@@ -1,4 +1,4 @@
-VERSION = 1.0
+VERSION = 1.0.1
 
 CONFIG = {
     "USERS": {
@@ -82,7 +82,7 @@ def GetOrdinalSuffix(number):
     else:
         return f"{number}{['th', 'st', 'nd', 'rd', 'th'][min(number % 10, 4)]}"
 
-def SendWebhook(Webhook, Ping, Username, Avatar, Title, Description, Thumbnail, Color):
+def SendWebhook(Webhook, Ping = False, Username = "RBXStalker", Avatar = "https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/f/6/b/f6b271550904ddeb16cec50fc9f34f84cb3ddb40.png", Title = "RBXStalker Started", Description = "You will now recieve messages about your selected users in this channel", Thumbnail = "https://avatars.githubusercontent.com/u/127895682?v=4", Color=0xFF0000):
     URL = Webhook
 
     Data = {
@@ -183,7 +183,7 @@ def CheckStatus():
         Description = UserConfig["DESCRIPTION"]
 
         if CurrentStatus == 0:  # Offline
-            print(f"{DisplayName} (@{Username}) is Offline.")
+            #print(f"{DisplayName} (@{Username}) is Offline.")
             continue
         elif CurrentStatus == 1:  # Online
             Title = f"{DisplayName} (@{Username}) is Online!"
@@ -261,6 +261,9 @@ for UserIDStr in GetUsers():
 
 print(f"[+] Running RBXStalker Version {VERSION}")
 print(f"[+] Developed by astacodes")
+
+for UserIDStr, UserConfig in CONFIG["USERS"].items():
+    SendWebhook(UserConfig["WEBHOOK"])
 
 while True:
     CheckStatus()

@@ -16,7 +16,7 @@ CONFIG = {
 }
 ```
 The `DELAY` option decides how long the delay is between checks, a delay of 30-60 seconds is recommended to prevent ratelimiting.\
-The `COOKIE` option is to get join links if the user has joins on. If you would like to enable this, put your `.ROBLOSECURITY` cookie in .ROBLOSECURITY.txt and set `COOKIE` to True. This is completely optional.\
+The `COOKIE` option is to get join links if the user has joins on. If you would like to enable this, put your `.ROBLOSECURITY` cookie in .ROBLOSECURITY.txt and set `COOKIE` to `True`. This is completely optional.\
 For each user you would like to add, you can copy and paste the table `USERID` into the `USERS` table.\
 The `PING` option decides wether to ping you once something happens/changes.\
 In the `WEBHOOK` option, put the Discord webhook where you will recieve the messages\

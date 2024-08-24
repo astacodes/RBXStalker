@@ -24,17 +24,17 @@ In the 'WEBHOOK' option, put the Discord webhook where you will recieve the mess
 ## Features
 
 ### Status Checker
-Check when users status change, such as when they are online or in game.
+Check when users status change, such as when they are online or in game.\
 ![image](https://github.com/user-attachments/assets/36e0a9b1-dc9f-40d3-b1a2-55c5b32f27d6)
 
 ### Joins Checker
-Check if user has joins on, and if yes provide to link to join their server, this requires you to put your .ROBLOSECURITY cookie but is completely optional.
+Check if user has joins on, and if yes provide to link to join their server, this requires you to put your .ROBLOSECURITY cookie but is completely optional.\
 ![image](https://github.com/user-attachments/assets/b478ebff-096d-4ad6-a9e0-c6c528a9be0c)
 
 ### Game Guesser
-The bot will automatically try and guess what game the user is playing based on their badges.
+The bot will automatically try and guess what game the user is playing based on their badges.\
 ![image](https://github.com/user-attachments/assets/81fc96c2-640f-47a0-a71f-8f22ba6dfc66)
 
 ### Badge Checker
-Whenever the user earns a new badge, our bot will send you a notification. This can be extremely useful as it gets the exact game they are playing.
+Whenever the user earns a new badge, our bot will send you a notification. This can be extremely useful as it gets the exact game they are playing.\
 ![image](https://github.com/user-attachments/assets/cf297f8e-aa4f-4d0b-9457-c0667cf5540e)

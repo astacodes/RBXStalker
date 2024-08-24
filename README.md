@@ -7,7 +7,7 @@ RBXStalker allows you to track down actions of specific users
 CONFIG = {
     "USERS": {
         "USERID": { # The users ID
-            "WEBHOOK": "https://discord.com/api/webhooks/1276756274213683232/IVq69IXRzTgfU8JDjioj2Qm6x491jXjEEIq9ZtxM-sfqtZG80uPZIhfnLy3pyE205mf5", # The webhook to send the data to
+            "WEBHOOK": "", # The webhook to send the data to
             "PING": True, # Wether to ping when the users status changes or when the user gets a new badge
         }
     },

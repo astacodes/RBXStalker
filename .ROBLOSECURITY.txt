@@ -1,0 +1,1 @@
+Leave this blank if you are not using the COOKIE option. More information can be found in the README.md file
